@@ -4,14 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_main"
-    tools:context=".MainActivity">
-
+    tools:context=".SignUpActivity">
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MyJournal"
+        android:text="Create An Account"
         android:textSize="35dp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,7 +19,7 @@
         app:layout_constraintVertical_bias="0.184" />
 
     <AutoCompleteTextView
-        android:id="@+id/email"
+        android:id="@+id/email_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
@@ -31,11 +29,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
         app:layout_constraintVertical_bias="0.124" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/password_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
@@ -48,29 +46,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email_signup"
         app:layout_constraintVertical_bias="0.033" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button2"
         android:layout_width="120dp"
         android:layout_height="50dp"
         android:layout_marginTop="36dp"
-        android:text="Login"
+        android:text="Create"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="172dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="96dp"
-        android:text="Create Account"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
-
+        app:layout_constraintTop_toBottomOf="@+id/password_signup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
